@@ -21,7 +21,7 @@ MFRC522 mfrc522(SS_PIN, RST_PIN);  // MFRC522 instance
 LiquidCrystal_I2C lcd(0x27, 20, 4); // I2C address 0x27, 20 chars x 4 lines
 
 String read_rfid;
-const String valid_rfid[] = {"e45bd4", "263e6245"};  // Array of valid UIDs
+const String valid_rfid[] = {"e45bd4", "263e6245"};  // Array of valid UIDs, edit this with your own RFID Card and Keyfob for it to work
 
 void setup() {
     Serial.begin(115200);
